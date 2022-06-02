@@ -1,0 +1,5 @@
+a=input()
+b=int(input())+len(a)
+print(a.rjust(b,'-'))
+print(a.center(b,'-'))
+print(a.ljust(b,'-'))

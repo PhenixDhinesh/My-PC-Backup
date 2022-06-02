@@ -1,0 +1,161 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+header{
+  top: 0%;
+  display: block;
+  font-family: 'inter';
+  height: 80px;
+  width: 100%;
+}
+header img{
+  margin: 2% 0 0 3%;
+  height: 80px;
+  width: 145px;
+}
+.nav{
+  margin-top: 3.5%;
+  margin-right: 1.5%;
+  float: right;
+  width: 40%;
+  display: inline;
+}
+.nav ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+.nav ul li a{
+  display: list-item;
+  color: black;
+  font-size: 20px;
+  border-radius: 3px;
+}
+.nav ul li a:hover{
+  font-size: 22px;
+  transition: .1s;
+}
+a.active::first-letter{
+  font-size: 25px;
+  color: #003A78;
+}
+a.active{
+  font-weight: bold;
+  margin-top: -10%;
+  font-size: 20px !important;
+}
+a.active::after{
+    content: '';
+    display: block;
+    position: relative;
+    width: 27%;
+    height: 2%;
+    border: 2px solid #003A78;
+    margin:-2px 0 0 37px;
+}
+li button{
+  display: inline-block !important;
+  font-size: 17px;
+  margin-right: 5px;
+  padding: 2px 18px;
+  color: white !important;
+  border-radius: 5px;
+  background: #003A78;
+  border:0;
+}
+li button.active{
+  font-size: 17px;
+  margin-right: 5px;
+  padding: 2px 18px;
+  color: #003A78;
+  border-radius: 5px;
+  background: #ffffff00;
+  border-width: 2px;
+  border-color: #003A78;
+}
+.checkbtn{
+  font-size: 30px;
+  color: black;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+button{display: none;}
+@media (max-width: 952px){
+  .nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  a.active::after{display: none;}
+  header{
+    display: flex;
+    justify-content: end;
+  }
+  .nav{
+    clear: both;
+  }
+
+  .nav ul li button{
+    display: none !important;
+  }
+  button{
+    margin-top: 5%;
+    margin-left: 60%;
+    display: inline !important;
+    font-size: 17px;
+    margin-right: 5px;
+    padding: 2px 18px;
+    color: white !important;
+    border-radius: 5px;
+    background: #003A78;
+    border:0;
+  }
+  button.active{
+    font-size: 17px;
+    margin-right: 5px;
+    padding: 2px 18px;
+    color: #003A78;
+    border-radius: 5px;
+    background: #ffffff00;
+    border-width: 2px;
+    border-color: #003A78;
+  }
+  .checkbtn{
+    display: inline-block;
+    margin-top: 5%;
+    margin-right:15%;
+  }
+  .nav ul{
+    display: block;
+    position: fixed;
+    width: 40%;
+    height: 100vh;
+    background: #ffffff00;
+    top: 80px;
+    left: -50%;
+    text-align: center;
+    transition: all .5s;
+  }
+  .nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  .nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~.nav ul{
+    left: 0;
+  }
+  
+}

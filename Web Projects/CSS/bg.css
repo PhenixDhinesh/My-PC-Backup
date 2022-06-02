@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* CSS Document */
+
+.bg{
+	background:url("../../pics/Wallpapers/128706.png") no-repeat;
+	background-size:cover;
+	background-position:center;
+	background-attachment: fixed
+}

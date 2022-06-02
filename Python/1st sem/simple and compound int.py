@@ -1,0 +1,8 @@
+print("To calculate Simple Interest:")
+n=int(input("enter the principle amount\n"))
+r=int(input("enter the interest rate\n"))
+y=int(input("enter the number of years\n"))
+print("Your Amount Through Simple Interest for",y,"years at",r,"percent rate is :\n",n*r/100*y+n,"\n your SI is:\n",n*r/100*y)
+print("to calculate compound interest :")
+m=int(input("enter value of compounded months\n"))
+print("your amount through Compound Interest for",y,"years at",r,"percent rate and compounded in",m,"month/per year is :\n",n*(1+r/100/m)**(m*y) +n,"\n your CI is :\n",n*(1+r/100/m)**(m*y))
